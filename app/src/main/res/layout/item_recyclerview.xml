@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/underline_background">
+
+    <ImageView
+        android:id="@+id/iconItem"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/sample1"
+        android:background="@drawable/roundbackground"
+        android:clipToOutline="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="360dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp">
+
+        <!--end로 설정하면 끝에 "..."을 표시-->
+        <TextView
+            android:id="@+id/textItem1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1111"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/textItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2222"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/textItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="3333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/sample11"/>
+            <TextView
+                android:id="@+id/textItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="4444"
+                android:textSize="16sp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/sample12"/>
+            <TextView
+                android:id="@+id/textItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="5555"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
